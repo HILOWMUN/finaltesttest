@@ -20,6 +20,7 @@
 </head>
 <body class="body">
 	b에서수정
+	a에서 수정
   <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-wrapper w-nav">
     <div class="main-container w-container">
       <div class="nav-wrapper">
