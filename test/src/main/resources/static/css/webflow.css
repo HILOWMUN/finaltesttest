@@ -1825,3 +1825,216 @@ textarea.w-select {
   top: 0;
   left: 0;
 }
+
+/* 다이어리 css  */
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:1000px){
+	.about-me {
+	    flex-direction: column;
+	}
+	
+}
+
+.about-me-info, .about-me-info1, .about-me-info2 {
+    width: 30%; /* Adjust width as needed */
+    position: relative;
+    padding: 20px;
+    background-color: #111217;
+    border: 1px solid #313237;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.about-me-info {
+    text-align: left;
+}
+
+.about-me-info1 {
+    text-align: center;
+}
+
+.about-me-info2 {
+    text-align: right;
+}
+
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    max-width: 1000px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.date-picker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.date-display {
+    margin: 0 20px;
+    font-size: 1.2rem;
+     
+}
+
+.stats {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.daily-intake, .remaining-calories, .nutrients {
+    margin-bottom: 20px;
+}
+
+.remaining-calories {
+    position: absolute;
+    top: 40px; /* 원하는 상단 간격 */
+    left: 60%; /* 가운데 정렬을 위해 절반으로 설정 */
+    /* 요소의 가로 크기의 절반만큼 왼쪽으로 이동 */
+}
+
+.nutrients .nutrient {
+    
+    margin-bottom: 10px;
+     
+      font-size: 1.2rem;
+}
+
+.progress-bar {
+    width: 60%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #76c7c0;
+    
+}
+
+.meal-records {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 2%; /* 원하는 만큼 조정 */
+}
+
+.meal-records h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.meal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 70%;
+    
+}
+
+.meal p {
+    margin: 0;
+    font-size : 30px;
+}
+
+.meal button {
+    background-color: #76c7c0;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.photos {
+    grid-column: span 2;
+    display: flex;
+    justify-content:center; /* 왼쪽 정렬 */
+    gap: 10px;
+    position: relative; /* 상대적 위치 설정 */
+    top: 20%;
+     
+    
+}
+
+.photo-box {
+    background-color: #f9f9f9;
+    border: 2px dashed #ddd;
+    width: 10%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+    
+}
+
+.water-intake {
+     position: absolute; /* 절대 위치 설정 */
+    top: 60px; /* 위쪽으로 이동 */
+    right: 120px; /* 오른쪽으로 이동 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px; /* 원하는 만큼 조정 */
+}
+
+.water-bar {
+    width: 30px;
+    height: 200px;
+    background-color: #ddd;
+    border-radius: 15px;
+    margin: 20px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.water-progress {
+    width: 100%;
+    background-color: #76c7c0;
+    position: absolute;
+    bottom: 0;
+}
+
+.water-intake button {
+    background-color: #76c7c0;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
